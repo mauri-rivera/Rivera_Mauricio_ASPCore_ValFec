@@ -1,0 +1,27 @@
+﻿@model Fecha
+
+<div class="cuadroFormularioFecha">
+    <form asp-action="Index" asp-controller="Home" method="POST">
+        <div class="columnaValidador">
+            <div class="columnaFecha">
+                <div class="datoFecha">
+                    <label asp-for="PruebaFecha" class="estiloLabel">Tu Fecha:</label>
+                    <div class="cuadroDatos">
+                        <input type="date" asp-for="PruebaFecha" class="cuadroTexto">
+                        <span asp-validation-for="PruebaFecha" class="color"></span>
+                    </div>
+                </div>
+                <div class="datoFecha">
+                    <label asp-for="PruebaFechaHora" class="estiloLabel">Tu Fecha con hora:</label>
+                    <div class="cuadroDatos">
+                        <input type="datetime-local" asp-for="PruebaFechaHora" class="cuadroTexto">
+                        <span asp-validation-for="PruebaFechaHora" class="color"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="botonRespuesta">
+                <button>Validar</button>
+            </div>
+        </div>
+    </form>
+</div>
